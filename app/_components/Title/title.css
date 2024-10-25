@@ -1,0 +1,30 @@
+.custom__title{
+    position: relative;
+    margin: 30px;
+}
+
+.custom__title::before {
+    content: url('');
+    background-image: url('../../../public/star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -8%;
+    top: -5;
+    height: 35px;
+    width: 10%;
+    max-width: 35px;
+}
+
+.custom__title::after {
+    content: url('');
+    background-image: url('../../../public/star2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -10%;
+    bottom: -5%;
+    height: 35px;
+    width: 10%;
+    max-width: 35px;
+}
