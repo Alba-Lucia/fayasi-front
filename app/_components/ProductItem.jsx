@@ -1,14 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 import ProductItemDetails from "./ProductItemDetails";
 
 const ProductItem = ({ product }) => {
@@ -31,7 +23,7 @@ const ProductItem = ({ product }) => {
         <div className="p-4">
           <h2 className="font-bold">{product.nombre}</h2>
           <p>{product.sellingPrice}</p>
-        <ProductItemDetails product={product} />
+          <ProductItemDetails product={product} />
         </div>
       </div>
     </div>
