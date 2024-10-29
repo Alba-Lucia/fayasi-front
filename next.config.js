@@ -8,7 +8,9 @@
 
 // export default nextConfig;
 
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: false,
   images: {
     remotePatterns: [
       {
@@ -20,3 +22,6 @@ module.exports = {
     ],
   },
 };
+
+module.exports = nextConfig;
+

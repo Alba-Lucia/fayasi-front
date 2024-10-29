@@ -1,31 +1,31 @@
 "use client"; // Agrega esta línea al principio del archivo
 
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@radix-ui/react-dropdown-menu";
-import { LayoutGrid, SearchCheck, ShoppingCart } from "lucide-react";
+// import {
+//   DropdownMenu,
+//   DropdownMenuContent,
+//   DropdownMenuItem,
+//   DropdownMenuLabel,
+//   DropdownMenuSeparator,
+//   DropdownMenuTrigger,
+// } from "@radix-ui/react-dropdown-menu";
+import { SearchCheck, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react"; // Importa useEffect y useState directamente desde React
 import GlobalApi from "../_utils/GlobalApi";
 
 function Header() {
-  const [categoryList, setCategoryList] = useState([]);
+  // const [categoryList, setCategoryList] = useState([]);
 
-  useEffect(() => {
-    getCategoryList();
-  }, []);
+  // useEffect(() => {
+  //   getCategoryList();
+  // }, []);
 
-  const getCategoryList = () => {
-    GlobalApi.getCategory().then((resp) => {
-      setCategoryList(resp.data.data);
-    });
-  };
+  // const getCategoryList = () => {
+  //   GlobalApi.getCategory().then((resp) => {
+  //     setCategoryList(resp.data.data);
+  //   });
+  // };
 
   return (
     <div className="p-1 px-8 shadow-sm flex items-center justify-between ">

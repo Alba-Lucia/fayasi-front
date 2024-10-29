@@ -27,7 +27,7 @@ const ProductItemDetails = ({ product }) => {
             <Image
               src={
                 product.image && product.image[0]?.url
-                  ? `${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}${product.image[0].url}`
+                  ? `https://fayasi-backend.onrender.com${product.image[0].url}`
                   : "/default-icon.svg"
               }
               alt="icon"
